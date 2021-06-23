@@ -1,5 +1,8 @@
 package com.mrgiovanotti.utils;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Utils {
 
   private Utils() {
@@ -46,6 +49,18 @@ public class Utils {
       }
     }
     return true;
+  }
+
+  public static Map<Character, Integer> countChars(String text) {
+    Map<Character, Integer> charactersCounted = new HashMap<>();
+    for (int i = 0; i < text.length(); i++) {
+      if (charactersCounted.containsKey(text.charAt(i))) {
+        charactersCounted.put(text.charAt(i), charactersCounted.get(text.charAt(i)) + 1);
+      } else {
+        charactersCounted.put(text.charAt(i), 1);
+      }
+    }
+    return charactersCounted;
   }
 
 }
