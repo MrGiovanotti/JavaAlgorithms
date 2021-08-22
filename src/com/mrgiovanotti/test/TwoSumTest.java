@@ -2,7 +2,7 @@ package com.mrgiovanotti.test;
 
 import static org.junit.Assert.assertArrayEquals;
 import org.junit.jupiter.api.Test;
-import com.mrgiovanotti.strings.TwoSum;
+import com.mrgiovanotti.arrays.TwoSum;
 
 class TwoSumTest {
 

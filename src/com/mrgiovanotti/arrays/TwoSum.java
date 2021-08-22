@@ -1,4 +1,4 @@
-package com.mrgiovanotti.strings;
+package com.mrgiovanotti.arrays;
 
 
 /**
